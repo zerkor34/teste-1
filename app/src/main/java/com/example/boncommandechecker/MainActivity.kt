@@ -818,7 +818,7 @@ private fun detectUnknownOrderLines(
             .replace(ref, " ", ignoreCase = true)
             .replace(numberRegex, " ")
             .replace("€", " ")
-            .replace(Regex("\s+"), " ")
+            .replace(Regex("""\s+"""), " ")
             .trim(' ', '-', ':', ';', '|')
         if (designation.length < 2) designation = "Produit détecté"
         if (designation.length > 90) designation = designation.take(90)
