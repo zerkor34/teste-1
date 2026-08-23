@@ -115,6 +115,7 @@ class PriceStore(context: Context) {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun App(store: PriceStore) {
     var tab by remember { mutableIntStateOf(0) }
