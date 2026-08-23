@@ -28,4 +28,7 @@ dependencies {
     implementation("androidx.compose.foundation:foundation")
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("com.google.android.gms:play-services-mlkit-text-recognition:19
+    implementation("com.google.android.gms:play-services-mlkit-text-recognition:19.0.1")
+
+    debugImplementation("androidx.compose.ui:ui-tooling")
+}
